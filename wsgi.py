@@ -1,15 +1,14 @@
-from flask
-import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask, flash, redirect, render_template, request, session, abort
 
 application = Flask(__name__)
 
 @application.route("/")
 def index():
-  return "Flask App!"
+	return "Flask App!"
 
-@application.route("/hello)
+@application.route("/hello")
 def hello():
-    return render_template('test.html')
+	return render_template("test.html")
 
-if __name__ == "__main__":
-    application.run()
+if __name=="__main__":
+	application.run()
