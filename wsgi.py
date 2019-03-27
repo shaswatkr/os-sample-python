@@ -1,21 +1,22 @@
-from flask import Flask
-application = Flask(__name__)
+from flask
+import Flask
+app = Flask(__name__)
 
-@application.route("/")
+@app.route("/")
 def index():
-    return "Index!"
+  return "Index!"
 
-@application.route("/hello")
+@app.route("/hello")
 def hello():
-    return "Hello,World!"
+  return "Hello World!"
 
-@application.route("/members")
+@app.route("/members")
 def members():
-    return "Members"
+  return "Members"
 
-@application.route("/members/<string:name>/")
+@app.route("/members/<string:name>/")
 def getMember(name):
-    return name</string:name>
+  return name < /string:name>
 
 if __name__ == "__main__":
-    application.run()
+  app.run()
