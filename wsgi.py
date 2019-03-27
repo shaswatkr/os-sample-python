@@ -2,7 +2,7 @@ from flask import Flask, render_template
 application = Flask(__name__)
 @application.route("/")
 def home():
-    return render_template("App.html")
+    return render_template("App.js")
 @application.route("/salvador")
 def salvador():
     return "Hello, Salvador"
