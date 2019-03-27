@@ -1,19 +1,19 @@
 from flask import Flask
-app = Flask(__name__)
+application = Flask(__name__)
  
-@app.route("/")
+@application.route("/")
 def index():
  return "Index!"
  
-@app.route("/hello")
+@application.route("/hello")
 def hello():
  return "Hello World!"
  
-@app.route("/members")
+@application.route("/members")
 def members():
  return "Members"
  
-@app.route("/members/<string:name>/")
+@application.route("/members/<string:name>/")
 def getMember(name):
  return name</string:name>
  
