@@ -13,9 +13,5 @@ def hello():
 def members():
     return "Members"
 
-@application.route("/members/<string:name>/")
-def getMember(name):
-    return name</string:name>
-
 if __name__ == "__main__":
     application.run()
