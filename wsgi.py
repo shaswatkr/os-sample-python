@@ -18,4 +18,4 @@ def getMember(name):
  return name</string:name>
  
 if __name__ == "__main__":
- app.run()
+ application.run()
